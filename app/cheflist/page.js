@@ -4,7 +4,7 @@ import { chefs } from "@/data/cheflistdata";
 
 import Imagesection from "@/components/imagesection";
 import Chefdetails from "@/components/chefdetails";
-//import { useState } from "react";
+
 export default function Home() {
   return (
     <div>

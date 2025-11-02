@@ -144,7 +144,7 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);
-  const [isOpen, setIsOpen] = useState(false); // ✅ FIXED
+  const [isOpen, setIsOpen] = useState(false); 
 
   return (
     <>

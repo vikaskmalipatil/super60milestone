@@ -24,7 +24,7 @@ export default function Home() {
       return;
     }
 
-    // Save data in localStorage
+    
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
 
