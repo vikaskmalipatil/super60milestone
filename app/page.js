@@ -7,7 +7,7 @@ import BookTable from "@/components/reservationtable";
 export default function Home() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <div className="bg-[url('https://aluxurylifestyle.com/wp-content/uploads/2025/01/luxury_rare_foods_experience.jpg')] bg-cover bg-center min-h-[80vh] w-full flex flex-col justify-between text-white">
         <div className="w-full flex flex-row justify-around items-center px-8 py-4">
           <div className="flex items-center gap-2">
@@ -50,23 +50,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative flex w-full min-h-[70vh] bg-white">
+      <div className="relative flex w-full min-h-[70vh] bg-white dark:bg-[#1D1D1D]">
         <div className="flex justify-center items-center w-1/2">
           <div>
             <h2 className=" font-bold mb-4 text-black">
-              
-              <div><BookTable /></div>
+              <div>
+                <BookTable />
+              </div>
             </h2>
-
-            <label>Phone:</label>
-            <input placeholder="Phone" required></input>
-            <select>
-              <option value="1 person"></option>
-              <option value="2 persons"></option>
-              <option value="3 persons"></option>
-              <option value="4 persons"></option>
-            </select>
-            <input placeholder="date" required></input>
           </div>
         </div>
         <div className="absolute inset-0 flex justify-center items-center ">
@@ -103,8 +94,8 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-row bg-white">
-        <div className="relative w-[55%] h-[40rem] bg-white flex justify-center items-center p-[1.5em]">
+      <div className="flex flex-row bg-white dark:bg-[#1D1D1D] ">
+        <div className="relative w-[55%] h-[40rem] bg-white dark:bg-[#1D1D1D] flex justify-center items-center p-[1.5em]">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fabout%2F5.jpg&w=640&q=75"
             alt="Waiter serving food"
@@ -120,16 +111,16 @@ export default function Home() {
         <div>
           <div className="w-[60%] mx-auto py-[5rem] flex flex-col gap-[1rem]">
             <div>
-              <h3 className="text-[1rem] text-gray-700 tracking-widest font-medium flex items-center gap-[0.5em]">
+              <h3 className="text-[1rem] text-gray-700 dark:text-white tracking-widest font-medium flex items-center gap-[0.5em]">
                 <span className="text-[#9b7b43]">WELCOME AT</span>
                 <span className="w-[3em] h-[1px] bg-[#9b7b43] inline-block"></span>
               </h3>
-              <h2 className="text-[3rem] font-bold text-black leading-tight mt-[0.5em]">
+              <h2 className="text-[3rem] font-bold text-black dark:text-white  leading-tight mt-[0.5em]">
                 Restan Restaurant
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] text-gray-600 text-[1rem] leading-relaxed">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[2rem] text-gray-600 dark:text-white  text-[1rem] leading-relaxed">
               <p>
                 Codulgence diminution so discovered mr apartments. Are off under
                 folly death wrote cause her way spite. Plan upon yet way get
@@ -145,9 +136,11 @@ export default function Home() {
             </div>
 
             <div className="mt-[2em]">
-              <button className="bg-[#9b7b43] text-white font-medium py-[0.9em] px-[2.2em] rounded-md hover:bg-[#8a6d3d] transition-colors">
-                Explore Menu
-              </button>
+              <a href="/menue">
+                <button className="bg-[#9b7b43] text-white font-medium py-[0.9em] px-[2.2em] rounded-md hover:bg-[#8a6d3d] transition-colors">
+                  Explore Menu
+                </button>
+              </a>
             </div>
 
             <div className="flex items-center gap-[1.5em] mt-[3em]">
@@ -192,14 +185,14 @@ export default function Home() {
       </div>
       <Chefdetails chefs={chefs} no={3} />
 
-      <div className="flex flex-col items-center text-center bg-white flex-wrap">
+      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap">
         <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
           <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
           NEWS & BLOG
           <span className="border-t border-[#7b6a47] w-8 ml-3"></span>
         </div>
 
-        <h2 className="text-[3rem] font-bold text-[#1a1a1a] mb-[1.5rem]">
+        <h2 className="text-[3rem] font-bold text-[#1a1a1a] dark:text-white  mb-[1.5rem]">
           Our Latest News & Blog
         </h2>
 
@@ -219,7 +212,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-20 py-16 bg-white relative">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-20 py-16 bg-white dark:bg-[#1D1D1D] relative">
         <div className="relative w-full lg:w-1/2 flex justify-center">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=640&q=75"
@@ -227,7 +220,7 @@ export default function Home() {
             className="rounded-full shadow-lg w-[80%] max-w-[450px]"
           />
 
-          <div className="absolute bottom-4 right-8 bg-white rounded-3xl shadow-lg p-6 w-[260px]">
+          <div className="absolute bottom-4 right-8 bg-white dark:bg-[#262525] rounded-3xl shadow-lg p-6 w-[260px]">
             <h3 className="text-xl font-semibold mb-2">
               Grilled Steak Platter
             </h3>
@@ -236,7 +229,7 @@ export default function Home() {
               <span>★★★★☆</span>
             </div>
 
-            <ul className="text-gray-600 text-sm space-y-1 mb-4">
+            <ul className="text-gray-600 dark:text-white text-sm space-y-1 mb-4">
               <li>• Steak</li>
               <li>• Baguette</li>
               <li>• Spanish Onion</li>
@@ -255,7 +248,7 @@ export default function Home() {
             Daily Offer
           </p>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-snug mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-snug mb-6">
             Grab This Deal <br /> Before It Finished
           </h2>
 
@@ -265,30 +258,29 @@ export default function Home() {
             civilly amiable pleased account carried. Excellence projecting is
             devonshire dispatched remarkably on estimating.
           </p>
-
-          <button className="flex items-center justify-center gap-2 bg-[#7b6a47] text-white px-6 py-3 rounded-md hover:bg-[#6b5a3d] transition mx-auto lg:mx-0">
-            Order Now
-          </button>
+          <a href="/exploremenue">
+            <button className="flex items-center justify-center gap-2 bg-[#7b6a47] text-white px-6 py-3 rounded-md hover:bg-[#6b5a3d] transition mx-auto lg:mx-0">
+              Order Now
+            </button>
+          </a>
         </div>
       </div>
 
-      <div className="flex flex-row justify-around items-center gap-[1em] py-[5rem]">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-[1em] py-[5rem]">
         <DesignBlock text1="18+" text2="Awards Won" />
         <DesignBlock text1="12K" text2="Daily Orders" />
         <DesignBlock text1="12M" text2="Trusted Users" />
         <DesignBlock text1="100+" text2="Menu & Dish" />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
 
-
-
 export function Foodcard({ title, imgsrc }) {
   return (
     <div className="flex flex-col justify-between items-center  ">
-      <div className="rounded-[6rem] m-1 bg-white">
+      <div className="rounded-[6rem] m-1 bg-white dark:bg-[#262525]">
         <img
           src={imgsrc}
           width="200vh"
@@ -296,8 +288,8 @@ export function Foodcard({ title, imgsrc }) {
           className="rounded-4xl p-[1.8em]"
         />
       </div>
-      <div className="bg-white rounded-2xl h-[25rem] w-[20rem] flex flex-col justify-center items-center gap-[2em]">
-        <h2 className="text-black text-[2rem]">{title}</h2>
+      <div className="bg-white dark:bg-[#262525] rounded-2xl h-[25rem] w-[20rem] flex flex-col justify-center items-center gap-[2em]">
+        <h2 className="text-black dark:text-white text-[2rem]">{title}</h2>
         <div className="text-gray-500 flex flex-col gap-[.8em]">
           <p>Breakfast casserole ---------- $5 - $20</p>
           <p>Greek yogurt ---------- $8 - $14</p>
@@ -313,16 +305,16 @@ export function Foodcard({ title, imgsrc }) {
 
 export function MenuCard({ Mtitle, Mimgsrc }) {
   return (
-    <div className="max-w-[18rem] bg-white rounded-2xl shadow-md overflow-hidden">
+    <div className="max-w-[18rem] bg-white dark:bg-[#262525] rounded-2xl shadow-md overflow-hidden">
       <img
         src={Mimgsrc}
         alt={Mtitle}
         className="w-full h-[10em] object-cover"
       />
 
-      <div className="text-black flex flex-col justify-center items-center p-4">
+      <div className="text-black dark:text-white flex flex-col justify-center items-center p-4">
         <h3 className="text-xl font-semibold mb-2">{Mtitle}</h3>
-        <p className="text-sm text-center mb-4 text-gray-500">
+        <p className="text-sm text-center mb-4 text-gray-500 dark:text-white">
           Resolve parties but why is she shewing. She sang now know.
         </p>
 
@@ -342,7 +334,7 @@ export function MenuCard({ Mtitle, Mimgsrc }) {
 }
 export function Blogs({ Bimgsrc, Btext, date, month }) {
   return (
-    <div className="relative w-[28rem] bg-white  overflow-hidden shadow-lg">
+    <div className="relative w-[28rem] bg-white dark:bg-[#262525]  overflow-hidden shadow-lg">
       <div className="relative">
         <img
           src={Bimgsrc}
@@ -357,17 +349,17 @@ export function Blogs({ Bimgsrc, Btext, date, month }) {
       </div>
 
       <div className="p-6 ">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase text-gray-400 mb-2">
+        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold uppercase text-gray-400  dark:text-white mb-2">
           <span>By Md Sohag</span>
           <span className="text-gray-400">•</span>
           <span>Burger, Food</span>
         </div>
 
-        <h3 className="text-lg font-bold text-gray-900 leading-snug mb-4 text-left">
+        <h3 className="text-lg font-bold text-gray-900  dark:text-white leading-snug mb-4 text-left">
           {Btext}
         </h3>
 
-        <div className="text-sm font-semibold text-gray-600 flex items-center gap-1">
+        <div className="text-sm font-semibold text-gray-600  dark:text-white flex items-center gap-1">
           <span>Read more</span>
           <span>↗</span>
         </div>
@@ -377,10 +369,9 @@ export function Blogs({ Bimgsrc, Btext, date, month }) {
 }
 export function DesignBlock({ text1, text2 }) {
   return (
-    <div className="bg-black border-1 border-gray-400 px-[2rem] py-[5rem] rounded-b-full rounded-t-full">
+    <div className="bg-black  border-1 border-gray-400 px-[2rem] py-[5rem] rounded-b-full rounded-t-full">
       <h1 className="text-4xl font-bold pb-[.25em]">{text1}</h1>
       <h1 className="text-[1em] font-bold pt-[.25em]">{text2}</h1>
-      
     </div>
   );
 }
