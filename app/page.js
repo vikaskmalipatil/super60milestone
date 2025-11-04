@@ -296,9 +296,9 @@ export function Foodcard({ title, imgsrc }) {
           <p>Cottage cheese ---------- $15 - $20</p>
         </div>
         <a href="/exploremenue">
-        <button className="rounded-[2rem] text-black bg-yellow-600 p-[1em]">
-          Make Order
-        </button>
+          <button className="rounded-[2rem] text-black bg-yellow-600 p-[1em]">
+            Make Order
+          </button>
         </a>
       </div>
     </div>
