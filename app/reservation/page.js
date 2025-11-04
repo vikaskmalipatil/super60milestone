@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="bg-white dark:bg-[#1D1D1D] py-25 px-8 flex flex-col md:flex-row items-center md:items-start gap-10 relative">
         <div className="relative md:absolute mt-10 md:mt-40 w-full md:w-190">
-          <div className="relative w-full h-150 overflow-hidden rounded-lg shadow-lg">
+          <div className="relative w-full h-125 overflow-hidden rounded-lg shadow-lg">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"

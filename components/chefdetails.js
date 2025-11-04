@@ -11,7 +11,7 @@ export default function Chefdetails({ chefs, no }) {
       <div className="grid grid-rows md:grid-cols-3 gap-10 justify-items-center">
         {chefs.slice(0, no).map((item, index) => (
           <div key={index} className="flex flex-col items-center">
-            <div className="relative w-56 h-56 rounded-full border-[6px] border-gray-400 flex items-center justify-center bg-white shadow-md">
+            <div className="relative w-56 h-56 rounded-full border-gray-400 flex items-center justify-center bg-white ">
               <img
                 src={item.img}
                 alt={item.name}
@@ -19,7 +19,7 @@ export default function Chefdetails({ chefs, no }) {
               />
             </div>
 
-            <div className="relative -mt-6 bg-[#7a633b] text-white py-3 px-10 font-semibold text-lg text-center clip-banner w-64">
+            <div className="relative -mt-6 bg-[#7a633b] text-white py-3 px-10 font-semibold text-lg text-center  w-64">
               <div>{item.name}</div>
               <div className="text-sm font-light uppercase">
                 {item.category}

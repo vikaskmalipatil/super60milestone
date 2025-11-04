@@ -25,12 +25,12 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Email*"
-                className="w-full p-3 bg-gray-100  text-black  rounded-md"
+                className="w-full p-3 bg-gray-300 dark:bg-white  text-black  rounded-md"
               />
               <input
                 type="password"
                 placeholder="Password*"
-                className="w-full p-3 bg-gray-100 text-black  rounded-md"
+                className="w-full p-3 bg-gray-300 dark:bg-white text-black  rounded-md"
               />
               <button className="w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">
                 LOGIN
@@ -40,7 +40,7 @@ export default function Home() {
               Or Login With
             </div>
             <div className="flex justify-center gap-5 mt-4">
-              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md">
+              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md hover:bg-gray-100">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
                   className="w-5 h-5"

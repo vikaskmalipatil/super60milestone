@@ -39,15 +39,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row relative bg-white dark:bg-[#1D1D1D] py-16 px-8 justify-center items-center">
-          <div className="flex flex-col md:flex-row gap-8">
+        <section className="flex flex-col md:flex-row bg-white dark:bg-[#1D1D1D] py-16 px-8 justify-center items-center">
+          <div className="flex flex-col md:flex-row mb-20 gap-8">
             <img
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
-              className="w-64 h-80 object-cover shadow-md"
+              className="w-64 h-80 shadow-md"
             />
             <img
               src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2"
-              className="w-64 h-80 object-cover mb-20 shadow-md"
+              className="w-64 h-80   shadow-md"
             />
           </div>
           <div className="bg-white dark:bg-[#262525] rounded-xl shadow-lg p-10 w-full md:w-275">
@@ -70,7 +70,7 @@ export default function Home() {
 
         <section className="bg-white dark:bg-[#1D1D1D] flex flex-col py-25 px-8">
           <div className="relative md:absolute mt-20 w-full md:w-190">
-            <div className="w-full h-64 md:h-96 overflow-hidden rounded-lg shadow-lg">
+            <div className="w-full h-64 md:h-96  rounded-lg shadow-lg">
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
                 src="https://www.youtube.com/embed/F3zw1Gvn4Mk?autoplay=1&mute=1&loop=1&playlist=F3zw1Gvn4Mk"
@@ -84,7 +84,7 @@ export default function Home() {
               Opening Hour
             </h3>
             <div className="text-l font-bold mb-4 text-gray-900 dark:text-white">
-              A relaxing and pleasant atmosphere, good jazz, dinner…
+              A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center..
             </div>
 
             <div className="space-y-4">

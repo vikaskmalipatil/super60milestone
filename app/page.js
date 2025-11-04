@@ -266,7 +266,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-around items-center gap-[1em] py-[5rem]">
+      <div className="flex flex-col md:flex-row justify-around items-center bg-black text-white gap-[1em] py-[5rem]">
         <DesignBlock text1="18+" text2="Awards Won" />
         <DesignBlock text1="12K" text2="Daily Orders" />
         <DesignBlock text1="12M" text2="Trusted Users" />

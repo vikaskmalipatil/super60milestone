@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar />
       <Imagesection heading="Register Page" title="register" />
       <div className="flex flex-col items-center justify-center py-16 bg-gray-100 dark:bg-[#1D1D1D]">
-        <div className="flex flex-col md:flex-row w-[80%] bg-white dark:bg-[#262525] shadow-xl rounded-lg overflow-hidden">
+        <div className="flex flex-col md:flex-row w-[80%] bg-white dark:bg-[#262525] shadow-l rounded-lg overflow-hidden">
           <div className="w-full md:w-1/2">
             <img
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fthumb%2F14.jpg&w=3840&q=75"
@@ -25,19 +25,19 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full p-3 bg-white text-black rounded-md"
+                className="w-full p-3 bg-gray-300 dark:bg-white text-black rounded-md"
               />
 
               <input
                 type="password"
                 placeholder="Password"
-                className="w-full p-3 bg-white text-black  rounded-md"
+                className="w-full p-3 bg-gray-300 dark:bg-white text-black  rounded-md"
               />
 
               <input
                 type="password"
                 placeholder="Confirm Password"
-                className="w-full p-3 bg-white text-black  rounded-md"
+                className="w-full p-3 bg-gray-300 dark:bg-white text-black  rounded-md"
               />
 
               <button className="w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">

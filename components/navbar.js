@@ -9,9 +9,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <nav className="flex items-center justify-between px-12 py-6 bg-white dark:bg-[#262525] shadow-md">
+      <nav className="flex items-center justify-between px-12 py-6 bg-white dark:bg-[#262525] ">
         <button className="md:hidden  left-0 text-2xl" onClick={() => setOpen(!open)}>☰</button>
-        <div className="flex justify-center w-full md:w-auto">
+        <div className="flex justify-center w-full md:w-20">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo.png&w=1920&q=75"
             alt="Light Logo"
@@ -28,12 +28,12 @@ export default function Navbar() {
 
         <div className="hidden md:flex gap-10 text-black dark:text-white font-medium relative">
           <Link href="/" className="hover:text-red-500">
-            Home
+            Home ▾
           </Link>
           <div className="relative">
             <button
               onClick={() => setOpen(!open)}
-              className="text-white flex items-center gap-1"
+              className=" text-black dark:text-white flex items-center gap-1"
             >
               Pages ▾
             </button>

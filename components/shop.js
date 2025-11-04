@@ -2,6 +2,9 @@
 
 
 export default function Shop({ img, category, name, price }) {
+  const alerted = () => {
+    alert("Item Added to Cart!");
+  };
 
 
   return (
@@ -19,7 +22,7 @@ export default function Shop({ img, category, name, price }) {
       </div>
       <div className="mb-4 text-[#8b6b39] font-bold">{price}</div>
 
-      <button
+      <button onClick={alerted}
         className="border border-[#8b6b39] text-[#8b6b39] font-semibold px-5 py-2 rounded-full hover:bg-[#8b6b39] hover:text-white transition-all"
       >
         🛒 Add to Cart

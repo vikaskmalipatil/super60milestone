@@ -14,7 +14,6 @@ export default function BookTable() {
               Phone
             </label>
             <input
-              type="tel"
               name="phone"
               placeholder="+4733378901"
               className="w-full border border-black bg-white text-black rounded-md px-4 py-3 "
@@ -44,12 +43,7 @@ export default function BookTable() {
                 name="date"
                 className="flex-1 px-4 py-3"
               />
-              <div className="bg-[#8b6b39] text-white p-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
-                ></svg>
-              </div>
+         
             </div>
           </div>
 
