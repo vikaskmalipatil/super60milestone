@@ -18,8 +18,8 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2 px-12 py-14">
-            <h2 className="text-3xl font-semibold text-black dark:text-white">
-              WELCOME <span className="text-yellow-600">BACK</span>
+            <h2 className="text-3xl font-semibold text-[#FFFF00] ">
+              WELCOME BAcK
             </h2>
             <form className="mt-8 space-y-5">
               <input
@@ -40,7 +40,7 @@ export default function Home() {
               Or Login With
             </div>
             <div className="flex justify-center gap-5 mt-4">
-              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md hover:bg-gray-100">
+              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png"
                   className="w-5 h-5"
@@ -48,7 +48,7 @@ export default function Home() {
                 Google
               </button>
 
-              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md hover:bg-gray-100">
+              <button className="flex items-center gap-2 border text-black dark:text-white px-6 py-2 rounded-md ">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png"
                   className="w-5 h-5"

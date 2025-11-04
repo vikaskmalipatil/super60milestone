@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Image from "next/image";
 import { chefs } from "@/data/cheflistdata";
 import Chefdetails from "@/components/chefdetails";
 import BookTable from "@/components/reservationtable";
