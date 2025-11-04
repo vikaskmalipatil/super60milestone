@@ -5,10 +5,10 @@ import Footer from "@/components/footer";
 import { foods } from "@/data/fooddata";
 import Imagesection from "@/components/imagesection";
 import Shop from "@/components/shop";
-import { useCart } from "@/data/CartContext";
+
 
 export default function ShopPage() {
-  const { addToCart } = useCart();
+  
 
   return (
     <div>
@@ -23,7 +23,6 @@ export default function ShopPage() {
             category={item.category}
             name={item.name}
             price={item.price}
-            onBorrowClick={() => addToCart(item)}
           />
         ))}
       </div>

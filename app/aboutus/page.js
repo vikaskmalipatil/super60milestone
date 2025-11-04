@@ -58,8 +58,7 @@ export default function Home() {
               We Invite You <br /> To Visit Our Restaurant
             </h2>
             <p className="text-gray-600 dark:text-white mb-6">
-              A relaxing and pleasant atmosphere, good jazz, dinner, and
-              cocktails...
+              A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.
             </p>
             <button className="bg-[#8b6b39] text-white px-6 py-3 rounded shadow hover:bg-[#6d522e] transition">
               Discover More

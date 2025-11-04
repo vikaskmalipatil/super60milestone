@@ -1,5 +1,4 @@
 "use client";
-
 export default function Cart({ img, category, name, price, onRemove }) {
   return (
     <div className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 p-6 w-72 text-center flex flex-col items-center">

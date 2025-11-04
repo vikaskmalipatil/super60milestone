@@ -3,35 +3,8 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Imagesection from "@/components/imagesection";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const router = useRouter();
-
-  const handleRegister = (e) => {
-    e.preventDefault();
-
-    if (!email || !password) {
-      alert("Please fill all fields!");
-      return;
-    }
-    if (password !== confirmPassword) {
-      alert("Passwords don't match!");
-      return;
-    }
-
-    
-    localStorage.setItem("email", email);
-    localStorage.setItem("password", password);
-
-    alert("Account Created Successfully!");
-    router.push("/login"); // Go to login page
-  };
-
   return (
     <div>
       <Navbar />
@@ -44,30 +17,27 @@ export default function Home() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="w-full md:w-1/2 px-12 py-14">
+          <div className="w-full text-black md:w-1/2 px-12 py-14">
             <h2 className="text-3xl font-semibold text-black dark:text-white">
               CREATE <span className="text-yellow-600">AN ACCOUNT</span>
             </h2>
-            <form onSubmit={handleRegister} className="mt-8 space-y-5">
+            <form className="mt-8 space-y-5">
               <input
                 type="email"
-                placeholder="Email*"
-                className="w-full p-3 bg-gray-300 rounded-md"
-                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email"
+                className="w-full p-3 bg-white text-black rounded-md"
               />
 
               <input
                 type="password"
-                placeholder="Password*"
-                className="w-full p-3 bg-gray-300 rounded-md"
-                onChange={(e) => setPassword(e.target.value)}
+                placeholder="Password"
+                className="w-full p-3 bg-white text-black  rounded-md"
               />
 
               <input
                 type="password"
-                placeholder="Confirm Password*"
-                className="w-full p-3 bg-gray-300 rounded-md"
-                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Confirm Password"
+                className="w-full p-3 bg-white text-black  rounded-md"
               />
 
               <button className="w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">

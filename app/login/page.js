@@ -3,28 +3,8 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Imagesection from "@/components/imagesection";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const router = useRouter();
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-
-    const storedEmail = localStorage.getItem("email");
-    const storedPassword = localStorage.getItem("password");
-
-    if (email === storedEmail && password === storedPassword) {
-      alert("Login Successful!");
-      router.push("/profile");
-    } else {
-      alert("Incorrect Email or Password!");
-    }
-  };
-
   return (
     <div>
       <Navbar />
@@ -41,18 +21,16 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-black dark:text-white">
               WELCOME <span className="text-yellow-600">BACK</span>
             </h2>
-            <form onSubmit={handleLogin} className="mt-8 space-y-5">
+            <form className="mt-8 space-y-5">
               <input
                 type="email"
                 placeholder="Email*"
-                className="w-full p-3 bg-gray-300 rounded-md"
-                onChange={(e) => setEmail(e.target.value)}
+                className="w-full p-3 bg-gray-100  text-black  rounded-md"
               />
               <input
                 type="password"
                 placeholder="Password*"
-                className="w-full p-3 bg-gray-300 rounded-md"
-                onChange={(e) => setPassword(e.target.value)}
+                className="w-full p-3 bg-gray-100 text-black  rounded-md"
               />
               <button className="w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">
                 LOGIN
