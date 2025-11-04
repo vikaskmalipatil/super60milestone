@@ -75,6 +75,9 @@ export default function Navbar() {
                   <li className="px-4 py-2 ">
                     <Link href="/exploremenue">Explore menu</Link>
                   </li>
+                  <li className="px-4 py-2 ">
+                    <Link href="/contactus">Contact Us</Link>
+                  </li>
                   
                 </ul>
               </div>
