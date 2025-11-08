@@ -99,7 +99,7 @@ export default function Home() {
 
             <div className="mt-4 bg-gray-100 p-3 rounded">
               <p className="text-sm">
-                ℹ Sorry, it seems there are no available payment methods.
+                 Sorry, it seems there are no available payment methods.
               </p>
             </div>
 
