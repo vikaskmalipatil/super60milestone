@@ -183,34 +183,9 @@ export default function Home() {
           />
         </div>
       </div>
-      <Chefdetails chefs={chefs} no={3} />
+      
 
-      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap">
-        <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
-          <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
-          NEWS & BLOG
-          <span className="border-t border-[#7b6a47] w-8 ml-3"></span>
-        </div>
-
-        <h2 className="text-[3rem] font-bold text-[#1a1a1a] dark:text-white  mb-[1.5rem]">
-          Our Latest News & Blog
-        </h2>
-
-        <div className="flex flex-row justify-center gap-[2rem] ">
-          <Blogs
-            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=828&q=75"
-            Btext="Picked up a Brussels burger Sprouts with ham"
-            date="10"
-            month="DEC"
-          />
-          <Blogs
-            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=828&q=75"
-            Btext="This prefabricated passive house is highly sustainable"
-            date="18"
-            month="NOV"
-          />
-        </div>
-      </div>
+      
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-20 py-16 bg-white dark:bg-[#1D1D1D] relative">
         <div className="relative w-full lg:w-1/2 flex justify-center">
@@ -271,6 +246,33 @@ export default function Home() {
         <DesignBlock text1="12K" text2="Daily Orders" />
         <DesignBlock text1="12M" text2="Trusted Users" />
         <DesignBlock text1="100+" text2="Menu & Dish" />
+      </div>
+      <Chefdetails chefs={chefs} no={3} />
+      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap">
+        <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
+          <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
+          NEWS & BLOG
+          <span className="border-t border-[#7b6a47] w-8 ml-3"></span>
+        </div>
+
+        <h2 className="text-[3rem] font-bold text-[#1a1a1a] dark:text-white  mb-[1.5rem]">
+          Our Latest News & Blog
+        </h2>
+
+        <div className="flex flex-row justify-center gap-[2rem] ">
+          <Blogs
+            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=828&q=75"
+            Btext="Picked up a Brussels burger Sprouts with ham"
+            date="10"
+            month="DEC"
+          />
+          <Blogs
+            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=828&q=75"
+            Btext="This prefabricated passive house is highly sustainable"
+            date="18"
+            month="NOV"
+          />
+        </div>
       </div>
       <Footer />
     </div>
