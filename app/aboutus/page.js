@@ -12,7 +12,8 @@ export default function Home() {
 
       <Imagesection heading="About US" title="about-us" />
       <div>
-        <section className="bg-[#f5f3f0] dark:bg-[#262525] flex flex-col justify-around items-center w-full h-75 md:h-90">
+        <div className="hidden md:block">
+        <section className="bg-[#f5f3f0] dark:bg-[#262525] flex flex-col justify-around items-center w-full h-75 md:h-90 ">
           <div className="text-stone-600 dark:text-white font-bold mt-10">
             OUR TRUSTED 8K HAPPY PARTNER
           </div>
@@ -39,6 +40,7 @@ export default function Home() {
             />
           </div>
         </section>
+        </div>
 
         <section className="flex flex-col md:flex-row bg-white dark:bg-[#1D1D1D] py-16 px-8 justify-center items-center">
           <div className="flex flex-col md:flex-row mb-20 gap-8">
