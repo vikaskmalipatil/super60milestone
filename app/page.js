@@ -284,36 +284,9 @@ export default function Home() {
           Make Order
         </button>
       </div>
+      <Footer/>
     </div>
   );
 }
 
-export function MenuCard({ Mtitle, Mimgsrc }) {
-  return (
-    <div className="max-w-[18rem] bg-white dark:bg-[#262525] rounded-2xl shadow-md overflow-hidden">
-      <img
-        src={Mimgsrc}
-        alt={Mtitle}
-        className="w-full h-[10em] object-cover"
-      />
-      <div className="text-black  dark:text-white flex flex-col justify-center items-center p-4">
-        <h3 className="text-xl font-semibold mb-2">{Mtitle}</h3>
-        <p className="text-sm text-center mb-4 text-gray-500">
-          Resolve parties but why is she shewing. She sang now know.
-        </p>
 
-        <div className="flex flex-row justify-between items-center w-full">
-          <p className="text-base font-medium">Price: $12</p>
-          <button className="w-8 h-8">
-            <img
-              src="https://st3.depositphotos.com/29384342/34148/i/1600/depositphotos_341489994-stock-photo-cart-button-shopping-cart-button.jpg"
-              alt="Add to cart"
-              className="w-full h-full rounded-full object-cover"
-            />
-          </button>
-        </div>
-      </div>
-      <Footer />
-    </div>
-  );
-}
