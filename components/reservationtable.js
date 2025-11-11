@@ -4,7 +4,7 @@ export default function BookTable() {
   return (
     <section className="bg-white dark:bg-[#262525] py-16 px-6 md:px-20">
       <div className="max-w-md mx-auto">
-        <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-10">
+        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-10">
           Book A Table
         </h2>
 
