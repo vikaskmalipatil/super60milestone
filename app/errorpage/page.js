@@ -26,7 +26,7 @@ export default function Home() {
               href="/"
               className="inline-block mt-6 bg-yellow-700 text-white px-6 py-2 rounded hover:bg-yellow-800 transition"
             >
-              Back To Home
+              Back To Homehi
             </a>
           </div>
         </div>
