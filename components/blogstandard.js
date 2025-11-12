@@ -14,7 +14,7 @@ export default function Blogstandard({ standardblogs }) {
             </div>
             <div className="font-bold text-3xl mt-4">{item.title}</div>
             <div className="mt-6 text-gray-500 ">{item.content}</div>
-            <button class="bg-[#836744]  text-white font-medium  mt-8 h-12 w-30 rounded-full hover:bg-[#6f5738] ">
+            <button className="bg-[#836744]  text-white font-medium  mt-8 h-12 w-30 rounded-full hover:bg-[#6f5738] ">
               Read More
             </button>
           </div>

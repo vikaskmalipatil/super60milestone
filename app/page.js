@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden">
       <Navbar />
-      <div className="bg-[url('https://aluxurylifestyle.com/wp-content/uploads/2025/01/luxury_rare_foods_experience.jpg')] bg-cover bg-center min-h-[80vh] w-full flex flex-col justify-between text-white">
-        <div className="w-full flex flex-row justify-around items-center px-8 py-4">
-          <div className="flex items-center gap-2">
+      <div className="bg-[url('https://restan-nextjs.vercel.app/assets/img/banner/13.jpg')] bg-cover bg-center min-h-[80vh] w-full flex flex-col text-white">
+        <div className="w-full flex flex-row justify-around items-center px-6 py-4 gap-2 sm:gap-4 bg-black/30">
+          <div className="flex items-center gap-2 text-sm sm:text-base">
             <img
               src="https://tse2.mm.bing.net/th/id/OIP.ISLGO3iVX6Nrqoth3x6HEwHaHw?pid=Api&P=0&h=180"
               alt="Phone"
@@ -273,18 +273,7 @@ export default function Home() {
         <DesignBlock text1="12M" text2="Trusted Users" />
         <DesignBlock text1="100+" text2="Menu & Dish" />
       </div>
-      <Chefdetails chefs={chefs} no={3} />
-      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap">
-        <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
-          <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
-          NEWS & BLOG
-          <span className="border-t border-[#7b6a47] w-8 ml-3"></span>
-        </div>
-        <button className="rounded-[2rem] text-black bg-yellow-600 p-[1em]">
-          Make Order
-        </button>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
