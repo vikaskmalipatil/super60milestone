@@ -53,7 +53,7 @@ export default function Navbar() {
           </Link>
         </div>
         {open && (
-              <div className="absolute left-30 md:left-109 mt-80 w-52 bg-white text-black  shadow-lg rounded-lg z-20">
+              <div className="absolute left-30 md:left-120 mt-112 w-52 bg-white text-black  shadow-lg rounded-lg z-20">
                 <ul className="py-2">
                   <li className="px-4 py-2">
                     <Link href="/aboutus">About Us</Link>
@@ -74,6 +74,12 @@ export default function Navbar() {
                   </li>
                   <li className="px-4 py-2 ">
                     <Link href="/exploremenue">Explore menu</Link>
+                  </li>
+                  <li className="px-4 py-2 ">
+                    <Link href="/errorpage">Error Page</Link>
+                  </li>
+                  <li className="px-4 py-2 ">
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li className="px-4 py-2 ">
                     <Link href="/contactus">Contact Us</Link>

@@ -5,15 +5,15 @@ import Imagesection from "@/components/imagesection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-white dark:bg-[#262525]">
       <Navbar />
 
       <Imagesection heading="Error Page" title="not-found" />
 
       <div>
-        <div className="flex items-center mb-20 justify-center bg-white text-center px-4">
+        <div className="flex items-center mb-20 justify-center bg-white dark:bg-[#262525] text-center px-4">
           <div>
-            <h1 className="text-[120px] font-extrabold text-black">404</h1>
+            <h1 className="text-[120px] font-extrabold text-black dark:text-white">404</h1>
             <h2 className="text-2xl font-semibold mt-2">
               Sorry Page Was Not Found!
             </h2>

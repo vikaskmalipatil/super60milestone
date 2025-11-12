@@ -12,7 +12,7 @@ export default function Home() {
 
       <Imagesection heading="About US" title="about-us" />
       <section>
-        <div className="flex flex-row justify-center item-center mt-20 gap-28">
+        <div className="flex flex-col md:flex-row justify-center item-center mt-20 ml-25 md:ml-0 gap-28">
           <div className="flex flex-col justify-center item-center boarder h-60 w-60 shadow-md p-6">
             <img
               className="h-30"
@@ -41,10 +41,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-white shadow-xl mt-20 rounded-2xl p-10">
-        <div className="text-gray-500   flex flex-col items-center justify-center gap-2 mt-20">
+      <section className="bg-white dark:bg-[#262525] shadow-xl mt-20 rounded-2xl p-10">
+        <div className="text-black  dark:text-white flex flex-col items-center justify-center gap-2 mt-20">
           <div className="">Keep in touch</div>
-          <h2 class="text-4xl font-bold text-black mt-2">Send us a Message</h2>
+          <h2 class="text-4xl font-bold text-black dark:text-white mt-2">Send us a Message</h2>
           <form >
             <div class="grid grid-cols-2 mb-8 gap-6">
               <input
