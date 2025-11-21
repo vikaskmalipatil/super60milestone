@@ -234,7 +234,7 @@ export default function Home() {
 
       <Chefdetails chefs={chefs} no={3} />
 
-      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap">
+      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap flex-shrink">
         <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
           <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
           NEWS & BLOG

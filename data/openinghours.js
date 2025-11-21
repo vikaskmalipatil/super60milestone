@@ -12,9 +12,9 @@ export default function OpeningHours() {
   ];
 
   return (
-    <div className="flex justify-center items-center w-full md:w-1/2 bg-[#ab7f40] py-10">
-      <div className="text-white w-[90%] md:w-[80%]">
-        <h2 className="text-[clamp(1rem,2rem,2.5rem)] font-semibold mb-6 text-center">Opening Hours</h2>
+    <div className="flex flex-col justify-center text-white items-center min-w-[clamp(2em,20em,30em)] md:w-1/2 bg-[#ab7f40]  p-10">
+     
+        <h2 className="text-[clamp(.5rem,2rem,2.5rem)] font-semibold mb-6 text-center">Opening Hours</h2>
 
         <div className="flex flex-col gap-1">
           {hours.map((item) => (
@@ -38,7 +38,7 @@ export default function OpeningHours() {
             </div>
           ))}
         </div>
-      </div>
+     
     </div>
   );
 }
