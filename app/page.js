@@ -5,8 +5,7 @@ import { chefs } from "@/data/cheflistdata";
 import Chefdetails from "@/components/chefdetails";
 import BookTable from "@/components/reservationtable";
 import OpeningHours from "@/data/openinghours";
-import {Foodcard,MenuCard,Blogs,DesignBlock} from "@/components/home";
-
+import { Foodcard, MenuCard, Blogs, DesignBlock } from "@/components/home";
 
 export default function Home() {
   return (
@@ -54,27 +53,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex w-full min-h-[70vh] bg-white dark:bg-[#1D1D1D] relative flex-row md:flex-row ">
-        <div className="flex justify-center items-center w-1/2">
-          <div>
-            <h2 className=" font-bold mb-4 text-black">
-              <div>
-                <BookTable />
-              </div>
-            </h2>
+      <div className="flex w-full bg-white dark:bg-[#1D1D1D] relative flex-col md:flex-row ">
+        <div className="flex justify-center items-center w-full md:w-1/2">
+          <div className=" font-bold mb-4 text-black py-10">
+            <BookTable />
           </div>
         </div>
         <div className="flex justify-center items-center absolute inset-0  ">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fabout%2F4.jpg&w=828&q=75"
             alt="restuarnt_image"
-            width={500}
-            height={500}
-            className="w-1/5 rounded-2xl shadow-xl object-cover z-20"
+            
+            className="w-1/5 rounded-2xl shadow-xl object-cover z-20 md:w-[clamp(30em,50em,80em) md:h-[clamp(10em,25em,50em)]"
           />
         </div>
-        <div className="flex justify-center items-center w-1/2 bg-[#8b6b3e]">
-             <OpeningHours/>
+        <div className="flex justify-center items-center w-full md:w-1/2 bg-[#8b6b3e]">
+          <div className=" font-bold my-4 text-black py-10">
+            <OpeningHours />
+          </div>
         </div>
       </div>
 
@@ -93,7 +89,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="flex flex-row bg-white dark:bg-[#1D1D1D] ">
+      <div className="flex flex-col sm:flex-row bg-white dark:bg-[#1D1D1D] ">
         <div className="relative w-[95%] px-12 h-[40rem] bg-white dark:bg-[#1D1D1D] flex justify-center items-center p-[1.5em]">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fabout%2F5.jpg&w=640&q=75"
@@ -108,7 +104,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <div className="w-[60%] mx-auto py-[5rem] flex flex-col gap-[1rem]">
+          <div className="w-[60%] mx-auto py-[5rem] flex flex-col gap-[1rem] h-auto">
             <div>
               <h3 className="text-[1rem] text-gray-700 dark:text-white tracking-widest font-medium flex items-center gap-[0.5em]">
                 <span className="text-[#9b7b43]">WELCOME AT</span>
@@ -182,15 +178,15 @@ export default function Home() {
           />
         </div>
       </div>
-<div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-20 py-16 bg-white dark:bg-[#1D1D1D] relative">
-        <div className="relative w-full lg:w-1/2 flex justify-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-12 px-6 lg:px-20 py-16 bg-white dark:bg-[#1D1D1D] relative">
+        <div className="flex flex-col relative w-full lg:w-1/2 justify-center items-center">
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=640&q=75"
             alt="Grilled Steak Platter"
             className="rounded-full shadow-lg w-[80%] max-w-[450px]"
           />
 
-          <div className="absolute bottom-4 right-8 bg-white dark:bg-[#262525] rounded-3xl shadow-lg p-6 w-[260px]">
+          <div className=" sm:absolute bottom-4 right-8 bg-white dark:bg-[#262525] rounded-3xl shadow-lg p-6 w-[clamp(3em,15em,20em)]">
             <h3 className="text-xl font-semibold mb-2">
               Grilled Steak Platter
             </h3>
@@ -249,7 +245,7 @@ export default function Home() {
           Our Latest News & Blog
         </h2>
 
-        <div className="flex flex-row justify-center gap-[2rem] ">
+        <div className="flex flex-col md:flex-row justify-center gap-[2rem] ">
           <Blogs
             Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=828&q=75"
             Btext="Picked up a Brussels burger Sprouts with ham"
@@ -265,8 +261,6 @@ export default function Home() {
         </div>
       </div>
 
-      
-
       <div className="flex flex-col md:flex-row justify-around items-center gap-[1em] py-[5rem] hidden dark:flex">
         <DesignBlock text1="18+" text2="Awards Won" />
         <DesignBlock text1="12K" text2="Daily Orders" />
@@ -277,5 +271,3 @@ export default function Home() {
     </div>
   );
 }
-
-
