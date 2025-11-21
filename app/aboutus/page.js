@@ -4,6 +4,7 @@ import { chefs } from "@/data/cheflistdata";
 import Chefdetails from "@/components/chefdetails";
 import Imagesection from "@/components/imagesection";
 import Openinghour from "@/components/openinghour";
+import Logos from "@/components/imageslogo";
 
 export default function Home() {
   return (
@@ -11,37 +12,8 @@ export default function Home() {
       <Navbar />
 
       <Imagesection heading="About US" title="about-us" />
+      <Logos />
       <div>
-        <div className="hidden md:block">
-        <section className="bg-[#f5f3f0] dark:bg-[#262525] flex flex-col justify-around items-center w-full h-75 md:h-90 ">
-          <div className="text-stone-600 dark:text-white font-bold mt-10">
-            OUR TRUSTED 8K HAPPY PARTNER
-          </div>
-          <div className="flex flex-row mb-10 gap-20">
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F1.png&w=1080&q=75"
-              className="h-20 w-30"
-            />
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F5.png&w=1080&q=75"
-              className="h-20 w-30"
-            />
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F4.png&w=1080&q=75"
-              className="h-20 w-30"
-            />
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F3.png&w=1080&q=75"
-              className="h-20 w-30"
-            />
-            <img
-              src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F2.png&w=1080&q=75"
-              className="h-20 w-30"
-            />
-          </div>
-        </section>
-        </div>
-
         <section className="flex flex-col md:flex-row bg-white dark:bg-[#1D1D1D] py-16 px-8 justify-center items-center">
           <div className="flex flex-col md:flex-row mb-20 gap-8">
             <img
@@ -61,7 +33,10 @@ export default function Home() {
               We Invite You <br /> To Visit Our Restaurant
             </h2>
             <p className="text-gray-600 dark:text-white mb-6">
-              A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.
+              A relaxing and pleasant atmosphere, good jazz, dinner, and
+              cocktails. The Patio Time Bar opens in the center of Florence. The
+              only bar inspired by the 1960s, it will give you a experience that
+              you’ll have a hard time forgetting.
             </p>
             <button className="bg-[#8b6b39] text-white px-6 py-3 rounded shadow hover:bg-[#6d522e] transition">
               Discover More
@@ -70,9 +45,7 @@ export default function Home() {
         </section>
 
         <Chefdetails chefs={chefs} no={3} />
-        <Openinghour/>
-
-       
+        <Openinghour />
       </div>
       <Footer />
     </div>

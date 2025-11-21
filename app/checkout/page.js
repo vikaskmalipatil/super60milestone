@@ -60,15 +60,15 @@ export default function Home() {
             </label>
           </div>
           <div className="flex flex-col">
-            <label class="block text-3xl font-medium mb-2">
+            <label className="block text-3xl font-medium mb-2">
               Order Notes (Option)
             </label>
 
-            <textarea
-              rows="4"
-              class="w-full p-3 border border-gray-300  font-normal  rounded-md "
+            <input
+              
+              className="w-full h-50 border border-gray-300    rounded-md "
               placeholder="Notes about your order, e.g. special notes for delivery."
-            ></textarea>
+            ></input>
           </div>
         </div>
         <div className="flex justify-center item-center mb-20">

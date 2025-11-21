@@ -8,7 +8,7 @@ export default function Imagesection({ heading, title }) {
           className="w-full h-full object-cover object-bottom opacity-70"
         />
 
-        <div className="absolute inset-0  flex flex-col items-center justify-center text-white text-center">
+        <div className="absolute top-0 left-0 right-0 bottom-0  flex flex-col items-center justify-center text-white text-center">
           <h1 className="text-4xl font-bold">{heading}</h1>
           <p className="mt-4 text-lg">Home → {title}</p>
           <a href="/exploremenue">
@@ -17,6 +17,7 @@ export default function Imagesection({ heading, title }) {
             </button>
           </a>
         </div>
+        
       </div>
     </div>
   );

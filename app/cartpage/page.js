@@ -4,6 +4,8 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Imagesection from "@/components/imagesection";
 import { chefs } from "@/data/cheflistdata";
+import { foods } from "@/data/fooddata";
+import Shop from "@/components/shop";
 
 export default function CartPage() {
   return (
@@ -11,7 +13,7 @@ export default function CartPage() {
       <Navbar />
       <Imagesection heading="Your Cart" title="Cart" />
       <div className="max-w-6xl mx-auto p-6">
-        {/* Cart Table */}
+        
         <div>
           <table className="w-full text-left">
             <thead className="bg-gray-200 text-gray-600  text-sm">
@@ -30,6 +32,7 @@ export default function CartPage() {
                 <td className="text-center py-10 text-gray-500">
                   Your cart is currently empty.
                 </td>
+                
               </tr>
             </tbody>
           </table>
@@ -49,9 +52,7 @@ export default function CartPage() {
                 Checkout
               </button>
             </Link>
-            <button className="bg-[#8A6B3F] hover:bg-[#745730] text-white px-6 py-2 rounded-md">
-              Checkout
-            </button>
+           
           </div>
         </div>
 

@@ -18,8 +18,8 @@ export default function Home() {
               className="h-30"
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fphone.png&w=640&q=75"
             ></img>
-            <h2 class="text-xl font-semibold">Hotline</h2>
-            <p class="text-gray-600 mt-1">+4733378901</p>
+            <h2 className="text-xl font-semibold">Hotline</h2>
+            <p className="text-gray-600 mt-1">+4733378901</p>
           </div>
           <div className="flex flex-col justify-center item-center boarder h-60 w-60 shadow-md p-6 ">
             <img
