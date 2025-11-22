@@ -12,7 +12,7 @@ export default function Home() {
 
       <Imagesection heading="About US" title="about-us" />
       <section>
-        <div className="flex flex-col md:flex-row justify-center item-center mt-20 ml-25 md:ml-0 gap-28">
+        <div className="flex flex-col md:flex-row justify-center itemS-center mt-20 ml-25 md:ml-0 gap-28">
           <div className="flex flex-col justify-center item-center boarder h-60 w-60 shadow-md p-6">
             <img
               className="h-30"
@@ -26,7 +26,7 @@ export default function Home() {
               className="h-30"
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fplaceholder.png&w=640&q=75"
             ></img>
-            <h2 class="text-xl font-semibold">Our Location</h2>
+            <h2 className="text-xl font-semibold">Our Location</h2>
             <p class="text-gray-600 mt-1">
               55 Main Street, The Grand Avenue 2nd Block, New York City
             </p>
@@ -37,16 +37,16 @@ export default function Home() {
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Femail.png&w=640&q=75"
             ></img>
             <h2 className="text-xl font-semibold">Official Email</h2>
-            <p class="text-gray-600 mt-1">info@restan.com</p>
+            <p className="text-gray-600 mt-1">info@restan.com</p>
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-[#262525] shadow-xl mt-20 rounded-2xl p-10">
+      <section className="bg-white dark:bg-[#262525] shadow-lg mt-20 rounded-2xl p-10">
         <div className="text-black  dark:text-white flex flex-col items-center justify-center gap-2 mt-20">
           <div className="">Keep in touch</div>
-          <h2 class="text-4xl font-bold text-black dark:text-white mt-2">Send us a Message</h2>
+          <h2 className="text-4xl font-bold text-black dark:text-white mt-2">Send us a Message</h2>
           <form >
-            <div class="grid grid-cols-2 mb-8 gap-6">
+            <div className="grid grid-cols-2 mb-8 gap-6">
               <input
                 type="text"
                 placeholder="Name"

@@ -40,7 +40,7 @@ export default function Home() {
                 className="w-full p-3 bg-gray-300 dark:bg-white text-black  rounded-md"
               />
 
-              <button className="w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">
+              <button className="w-full bg-[#8b6b39] hover:bg-yellow-800 text-white font-semibold py-3 rounded-md">
                 REGISTER
               </button>
             </form>

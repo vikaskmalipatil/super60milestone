@@ -25,11 +25,11 @@ export default function BookTable() {
               Person
             </label>
             <select className="w-full border border-black rounded-md px-4 py-3 bg-white text-black">
-              <option >Select Person</option>
-              <option >1 Person</option>
+              <option>Select Person</option>
+              <option>1 Person</option>
               <option>2 Person</option>
               <option>3 Person</option>
-              <option >4 Person</option>
+              <option>4 Person</option>
               <option>5+ Person</option>
             </select>
           </div>
@@ -38,12 +38,7 @@ export default function BookTable() {
               Date
             </label>
             <div className="flex items-center bg-white text-black border border-black  rounded-md ">
-              <input
-                type="date"
-                name="date"
-                className="flex-1 px-4 py-3"
-              />
-         
+              <input type="date" name="date" className="flex-1 px-4 py-3" />
             </div>
           </div>
 
@@ -55,12 +50,12 @@ export default function BookTable() {
               name="time"
               className="w-full border border-black rounded-md px-4 py-3 bg-white text-black"
             >
-              <option >Select Time</option>
+              <option>Select Time</option>
               <option>10:00 AM</option>
-              <option >12:00 PM</option>
-              <option >2:00 PM</option>
-              <option >6:00 PM</option>
-              <option >8:00 PM</option>
+              <option>12:00 PM</option>
+              <option>2:00 PM</option>
+              <option>6:00 PM</option>
+              <option>8:00 PM</option>
             </select>
           </div>
 

@@ -80,7 +80,7 @@ export default function Footer() {
               <div className="flex items-center mt-3">
                 <input type="checkbox" className="mr-2" />
                 <span className="text-xs">
-                  I agree to the{" "}
+                  I agree to the
                     Privacy Policy
                 </span>
               </div>
