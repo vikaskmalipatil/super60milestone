@@ -55,6 +55,9 @@ export default function Navbar() {
           <div className="absolute left-30 md:left-120 mt-112 w-52 bg-white text-black  rounded-lg z-20">
             <ul className="py-2">
               <li className="px-4 py-2">
+                <Link href="/">Home</Link>
+              </li>
+              <li className="px-4 py-2">
                 <Link href="/aboutus">About Us</Link>
               </li>
               <li className="px-4 py-2 ">
