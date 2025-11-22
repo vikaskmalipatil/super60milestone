@@ -55,7 +55,7 @@ export function MenuCard({ Mtitle, Mimgsrc }) {
 }
 export function Blogs({ Bimgsrc, Btext, date, month }) {
   return (
-    <div className="relative w-[28rem] bg-white dark:bg-[#262525]  overflow-hidden shadow-lg">
+    <div className="relative w-[clamp(10em,28em,30em)] bg-white dark:bg-[#262525]  overflow-hidden shadow-lg">
       <div className="relative">
         <img
           src={Bimgsrc}

@@ -63,11 +63,10 @@ export default function Home() {
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fabout%2F4.jpg&w=828&q=75"
             alt="restuarnt_image"
-            
-            className="w-1/5 rounded-2xl shadow-xl object-cover z-20 md:w-[clamp(30em,50em,80em) md:h-[clamp(10em,25em,50em)]"
+            className="w-1/5 rounded-2xl shadow-xl object-cover z-20 md:w-[clamp(30em,50em,80em) md:h-[clamp(10em,25em,50em)] hidden md:flex"
           />
         </div>
-        <div className="flex justify-center items-center w-full md:w-1/2 bg-[#8b6b3e]">
+        <div className="flex justify-center items-center w-full md:w-1/2 bg-[#8b6b3e]  ">
           <div className=" font-bold my-4 text-black py-10">
             <OpeningHours />
           </div>
@@ -231,42 +230,46 @@ export default function Home() {
           </a>
         </div>
       </div>
-
-      <Chefdetails chefs={chefs} no={3} />
-
-      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] flex-wrap flex-shrink">
-        <div className="flex items-center text-[#7b6a47] font-semibold  text-[1.5rem]  mt-[2rem] ">
-          <span className="border-t border-[#7b6a47] w-8 mr-3"></span>
-          NEWS & BLOG
-          <span className="border-t border-[#7b6a47] w-8 ml-3"></span>
-        </div>
-
-        <h2 className="text-[3rem] font-bold text-[#1a1a1a] dark:text-white  mb-[1.5rem]">
-          Our Latest News & Blog
-        </h2>
-
-        <div className="flex flex-col md:flex-row justify-center gap-[2rem] ">
-          <Blogs
-            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=828&q=75"
-            Btext="Picked up a Brussels burger Sprouts with ham"
-            date="10"
-            month="DEC"
-          />
-          <Blogs
-            Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=828&q=75"
-            Btext="This prefabricated passive house is highly sustainable"
-            date="18"
-            month="NOV"
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-col md:flex-row justify-around items-center gap-[1em] py-[5rem] hidden dark:flex">
+      <div className="flex flex-col md:flex-row justify-around items-center gap-[1em] py-[5rem]  dark:hidden">
         <DesignBlock text1="18+" text2="Awards Won" />
         <DesignBlock text1="12K" text2="Daily Orders" />
         <DesignBlock text1="12M" text2="Trusted Users" />
         <DesignBlock text1="100+" text2="Menu & Dish" />
       </div>
+      <Chefdetails chefs={chefs} no={3} />
+
+      <div className="flex flex-col items-center text-center bg-white dark:bg-[#1D1D1D] px-4 sm:px-6 lg:px-20 py-10 ">
+        <div className="flex items-center text-[#7b6a47] font-semibold text-sm sm:text-base md:text-[1.5em] mt-4">
+          <span className="border-t border-[#7b6a47] w-6 sm:w-8 mr-3" />
+          NEWS & BLOG
+          <span className="border-t border-[#7b6a47] w-6 sm:w-8 ml-3" />
+        </div>
+
+        <h2 className="mt-4 text-2xl sm:text-3xl md:text-[3rem] font-bold text-[#1a1a1a] dark:text-white mb-6">
+          Our Latest News &amp; Blog
+        </h2>
+
+        <div className="mt-2 flex w-full flex-col md:flex-row md:justify-center gap-6 md:gap-8">
+          <div className="w-full md:w-1/2">
+            <Blogs
+              Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=828&q=75"
+              Btext="Picked up a Brussels burger Sprouts with ham"
+              date="10"
+              month="DEC"
+            />
+          </div>
+
+          <div className="w-full md:w-1/2">
+            <Blogs
+              Bimgsrc="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=828&q=75"
+              Btext="This prefabricated passive house is highly sustainable"
+              date="18"
+              month="NOV"
+            />
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
