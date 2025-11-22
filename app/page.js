@@ -63,7 +63,7 @@ export default function Home() {
           <img
             src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fabout%2F4.jpg&w=828&q=75"
             alt="restuarnt_image"
-            className="w-1/5 rounded-2xl shadow-xl object-cover z-20 md:w-[clamp(30em,50em,80em) md:h-[clamp(10em,25em,50em)] hidden md:flex"
+            className="w-1/5 rounded-2xl shadow-xl object-cover z-20 md:w-[clamp(30em,50em,80em)] md:h-[clamp(10em,25em,50em)] hidden md:flex"
           />
         </div>
         <div className="flex justify-center items-center w-full md:w-1/2 bg-[#8b6b3e]  ">
