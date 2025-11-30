@@ -2,6 +2,7 @@ My team is Rishan Vigas and Vikas K Malipatil
 My repo link is (https://github.com/vikaskmalipatil/super60milestone)
 vercel hosted link is (https://super60milestone.vercel.app/)
 i have made folder for sperate pages
+```
 app/
     aboutus
     blog
@@ -17,6 +18,7 @@ app/
     profile
     register
     reservation
+    page.js//mainpage
 components/
     blogstandard.js
     chefdetailes.js
@@ -33,6 +35,7 @@ data/
     fooddata.js
     openinghours.js
     standardblog.js
+```
 
 
 this is ours folder structure
