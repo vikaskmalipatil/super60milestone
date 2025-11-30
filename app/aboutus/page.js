@@ -14,7 +14,7 @@ export default function Home() {
       <Imagesection heading="About US" title="about-us" />
       <Logos />
       <div>
-        <section className="flex flex-col md:flex-row bg-white dark:bg-[#1D1D1D] py-16 px-8 justify-center items-center">
+        <section className="flex flex-col md:flex-row bg-white dark:bg-[#1D1D1D] py-16 px-4 justify-center items-center">
           <div className="flex flex-col md:flex-row mb-20 gap-8">
             <img
               src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
@@ -25,7 +25,7 @@ export default function Home() {
               className="w-64 h-80   shadow-md"
             />
           </div>
-          <div className="bg-white dark:bg-[#262525] rounded-xl shadow-lg p-10 w-full md:w-275">
+          <div className="bg-white dark:bg-[#262525] rounded-xl shadow-lg p-10 w-full md:w-250">
             <h3 className="text-[#8b6b39] dark:text-white uppercase font-semibold mb-2 flex items-center gap-2">
               About Us <span className="text-sm">➸</span>
             </h3>

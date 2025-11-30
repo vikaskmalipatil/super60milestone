@@ -1,15 +1,11 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-
 import Imagesection from "@/components/imagesection";
-
 export default function Home() {
   return (
     <div>
       <Navbar />
-
       <Imagesection heading="Cart Page" title="checkout" />
-
       <div>
         <div className="flex flex-row gap-20 item-center font-bold justify-center mt-18">
           <div className="flex flex-col gap-3">
@@ -66,7 +62,7 @@ export default function Home() {
 
             <input
               
-              className="w-full h-50 border border-gray-300    rounded-md "
+              className="w-full h-50 border border-gray-300  rounded-md "
               placeholder="Notes about your order, e.g. special notes for delivery."
             ></input>
           </div>

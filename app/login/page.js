@@ -18,8 +18,8 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2 px-12 py-14">
-            <h2 className="text-3xl font-semibold text-[#FFFF00] ">
-              WELCOME BAcK
+            <h2 className="text-3xl font-semibold text-[#8b6b39]">
+              WELCOME BACK
             </h2>
             <form className="mt-8 space-y-5">
               <input

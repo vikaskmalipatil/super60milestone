@@ -18,7 +18,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full text-black md:w-1/2 px-12 py-14">
-            <h2 className="text-3xl font-semibold text-[#FFFF00] ">
+            <h2 className="text-3xl font-semibold text-[#8b6b39] ">
               CREATE AN ACCOUNT
             </h2>
             <form className="mt-8 space-y-5">

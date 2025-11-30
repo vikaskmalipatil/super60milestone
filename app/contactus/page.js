@@ -27,7 +27,7 @@ export default function Home() {
               src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2Fplaceholder.png&w=640&q=75"
             ></img>
             <h2 className="text-xl font-semibold">Our Location</h2>
-            <p class="text-gray-600 mt-1">
+            <p className="text-gray-600 mt-1">
               55 Main Street, The Grand Avenue 2nd Block, New York City
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
             <input
               type="email"
               placeholder="Email"
-              class="w-full p-4 border border-gray-200      "
+              class="w-full p-4 border border-gray-200"
             />
 
             <textarea

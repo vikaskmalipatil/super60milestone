@@ -1,6 +1,5 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import Image from "next/image";
 import { chefs } from "@/data/cheflistdata";
 import Chefdetails from "@/components/chefdetails";
 import BookTable from "@/components/reservationtable";
@@ -130,7 +129,7 @@ export default function Home() {
             </div>
 
             <div className="mt-[2em]">
-              <a href="/menue">
+              <a href="/menu">
                 <button className="bg-[#9b7b43] text-white font-medium py-[0.9em] px-[2.2em] rounded-md hover:bg-[#8a6d3d] transition-colors">
                   Explore Menu
                 </button>

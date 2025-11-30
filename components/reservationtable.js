@@ -38,7 +38,8 @@ export default function BookTable() {
               Date
             </label>
             <div className="flex items-center bg-white text-black border border-black  rounded-md ">
-              <input type="date" name="date" className="flex-1 px-4 py-3" />
+              
+              <input  placeholder="date" className="flex-1 px-4 py-3" />
             </div>
           </div>
 
